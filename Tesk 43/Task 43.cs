@@ -13,11 +13,24 @@ for ( i = 0; i < a.Length; i++ )
 
 void schet(double [] mass)
 {
-    
+    if (mass[0] != mass[1])
+    {
 
 double x = (mass[3] - mass[2])/ (mass[0] - mass[1]);
 double y = mass[0] * (mass[3] - mass[2]) / (mass[0] - mass[1]) + mass[2];
-Console.WriteLine($"({x} ; {y})");
+Console.WriteLine($"({x } ; {y })");
+    }
+else if (mass [2] == mass [3] && mass[0] == mass[1])
+{
+    Console.WriteLine("Прямые совпадают");
+
+}
+else
+{
+    Console.WriteLine("Прямые параллельные");
+}
+
+
 }
 
 
